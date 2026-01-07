@@ -1,0 +1,21 @@
+# Exercise 01: I don’t want to set the world on fire - Todo List
+
+- [ ] Implement `Brain` class
+    - [ ] Attribute: `std::string ideas[100]`
+    - [ ] Default constructor, Copy constructor, Assignment operator, Destructor
+- [ ] Update `Dog` class
+    - [ ] Add a private `Brain*` attribute
+    - [ ] Initialize Brain in constructor (new Brain())
+    - [ ] Delete Brain in destructor
+    - [ ] **Crucial**: Implement Deep Copy in Copy Constructor and Assignment Operator
+- [ ] Update `Cat` class
+    - [ ] Add a private `Brain*` attribute
+    - [ ] Initialize Brain in constructor (new Brain())
+    - [ ] Delete Brain in destructor
+    - [ ] **Crucial**: Implement Deep Copy in Copy Constructor and Assignment Operator
+- [ ] Create a `main.cpp` to test deep copies
+    - [ ] Create an array of Animal pointers (half Dogs, half Cats)
+    - [ ] Loop through the array and delete every Animal
+    - [ ] Test deep copy explicitly: Create a Dog, copy it, and show they don't share the same Brain
+- [ ] Verify memory management (Valgrind/Leaks)
+- [ ] Ensure Makefile is present and works

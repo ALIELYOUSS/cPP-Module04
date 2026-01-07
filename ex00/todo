@@ -1,0 +1,22 @@
+# Exercise 00: Polymorphism - Todo List
+
+- [ ] Implement `Animal` base class
+    - [ ] Protected attribute: `std::string type`
+    - [ ] Default constructor, Copy constructor, Assignment operator, Destructor
+    - [ ] Virtual member function: `void makeSound() const`
+- [ ] Implement `Dog` class (inherits from Animal)
+    - [ ] Set `type` to "Dog" in constructor
+    - [ ] Override `makeSound()` to bark
+- [ ] Implement `Cat` class (inherits from Animal)
+    - [ ] Set `type` to "Cat" in constructor
+    - [ ] Override `makeSound()` to meow
+- [ ] Implement `WrongAnimal` base class
+    - [ ] Same attributes/methods as Animal but `makeSound()` is NOT virtual
+- [ ] Implement `WrongCat` class (inherits from WrongAnimal)
+    - [ ] Same as Cat but inherits from WrongAnimal
+- [ ] Create a `main.cpp` to test polymorphism
+    - [ ] Test Animal, Dog, and Cat pointers
+    - [ ] Demonstrate that `makeSound()` calls the correct derived version
+    - [ ] Test WrongAnimal and WrongCat to show the difference (non-polymorphic behavior)
+- [ ] Verify memory management (no leaks)
+- [ ] Ensure Makefile is present and works

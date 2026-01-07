@@ -1,0 +1,12 @@
+# Exercise 02: Abstract class - Todo List
+
+- [ ] Modify `Animal` class to be abstract
+    - [ ] Make `makeSound()` a pure virtual function: `virtual void makeSound() const = 0;`
+    - [ ] Rename `Animal` to `AAnimal` (optional but often suggested in the subject for clarity)
+- [ ] Ensure `Dog` and `Cat` still work and inherit correctly
+- [ ] Create a `main.cpp` to verify abstraction
+    - [ ] Attempt to instantiate an `AAnimal` object (should fail at compile time)
+    - [ ] Instantiate `Dog` and `Cat` (should work)
+    - [ ] Use `AAnimal*` pointers to point to derived objects
+- [ ] Verify memory management
+- [ ] Ensure Makefile is present and works
