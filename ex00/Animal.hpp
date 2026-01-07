@@ -16,24 +16,4 @@ public:
     virtual void    makeSound() const;
 };
 
-class Dog : public Animal{
-public:
-    Dog();
-    Dog(const std::string type);
-    Dog(const Dog& other);
-    Dog& operator=(const Dog& other);
-    ~Dog();
-    void    makeSound() const;
-};
-
-class Cat : public Animal{
-public:
-    Cat();
-    Cat(const std::string type);
-    Cat(const Cat& other);
-    Cat& operator=(const Cat& other);
-    ~Cat();
-    void    makeSound() const;
-};
-
 #endif
