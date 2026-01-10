@@ -26,6 +26,7 @@ std::string Animal::getType() const {
 }
 
 Animal& Animal::operator=(const Animal& other) {
+    std::cout << "Animal asigment op called\n";
     if (this != &other) {
         this->type = other.getType();
     }
