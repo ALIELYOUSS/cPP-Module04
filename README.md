@@ -17,7 +17,6 @@ ownership, and abstract interfaces.
 | `ex00` | Basic inheritance and polymorphism | Implemented |
 | `ex01` | Deep copies with `Brain` | Implemented |
 | `ex02` | Abstract `Animal` base class | Implemented |
-| `ex03` | Interfaces and the Materia system | In progress |
 
 ### `ex00` - Polymorphism
 
@@ -36,12 +35,6 @@ dynamic allocation, copy construction, and deep-copy behavior.
 Turns `Animal` into an abstract base class while retaining polymorphic `Dog`
 and `Cat` implementations. The provided test verifies virtual dispatch and
 safe cleanup through base-class pointers.
-
-### `ex03` - Interfaces and Materia
-
-This exercise is currently represented by a todo list. The planned work covers
-`AMateria`, `Ice`, `Cure`, `ICharacter`, `Character`, `IMateriaSource`, and
-`MateriaSource`, including cloning, inventories, ownership, and deep copies.
 
 ## Requirements
 
@@ -66,15 +59,12 @@ make
 ./Animal
 ```
 
-The same commands work from `ex01` and `ex02`:
+The same command works from `ex01` and `ex02`:
 
 ```bash
 cd ex01 && make && ./Animal
 cd ../ex02 && make && ./Animal
 ```
-
-`ex03` does not have a Makefile or implementation yet, so it cannot currently
-be built.
 
 ## Makefile Commands
 
@@ -87,7 +77,7 @@ make fclean   # Remove object files and the executable
 make re       # Rebuild from scratch
 ```
 
-To clean all implemented exercises from the repository root:
+To clean all exercises from the repository root:
 
 ```bash
 for directory in ex00 ex01 ex02; do make -C "$directory" fclean; done
@@ -130,8 +120,6 @@ for directory in ex00 ex01 ex02; do make -C "$directory" fclean; done
 │   ├── Dog.hpp
 │   ├── Makefile
 │   └── main.cpp
-├── ex03/
-│   └── todo
 └── README.md
 ```
 
